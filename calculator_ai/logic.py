@@ -15,8 +15,10 @@ def add(a: Number, b: Number) -> float:
 
     if float(a) < 0 or float(b) < 0:
         raise ValueError("Negative inputs not allowed")
-        
+
     return round(float(a) + float(b), 2)
+
+
 def subtract(a: Number, b: Number) -> float:
     """Return a - b as float."""
     return float(a) - float(b)

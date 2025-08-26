@@ -22,3 +22,8 @@ def add(a: Number, b: Number) -> float:
 def subtract(a: Number, b: Number) -> float:
     """Return a - b as float."""
     return float(a) - float(b)
+
+
+def multiply(a: Number, b: Number) -> float:
+    """Return a * b as float."""
+    return float(a) * float(b)

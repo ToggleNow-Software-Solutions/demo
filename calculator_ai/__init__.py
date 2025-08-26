@@ -1,5 +1,5 @@
 """init imports"""
 
-from .logic import add, subtract
+from .logic import add, multiply, subtract
 
-__all__ = ["add", "subtract"]
+__all__ = ["add", "subtract", "multiply"]

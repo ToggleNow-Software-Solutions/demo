@@ -1,0 +1,73 @@
+            - name: Build macOS Application
+  # You may pin to the exact commit or the version.
+  # uses: starburst997/build-macos@28ad598054ed2688fdd3cab857428ee77811afa0
+  uses: starburst997/build-macos@v1.0.1
+  with:
+    # Working directory containing the project (relative to repository root)
+    working_directory: # optional, default is .
+    # Node.js version to use
+    node_version: # optional, default is 20
+    # Enable npm installation (auto-detected if package.json exists)
+    enable_npm: # optional, default is auto
+    # Path to package-lock.json for npm caching (relative to working_directory)
+    npm_cache_dependency_path: # optional, default is package-lock.json
+    # Ruby version to use
+    ruby_version: # optional, default is 3.2
+    # Enable bundler installation (auto-detected if Gemfile exists)
+    enable_bundler: # optional, default is auto
+    # Enable CocoaPods installation (auto-detected if Podfile exists)
+    enable_cocoapods: # optional, default is auto
+    # Directory containing Podfile (relative to working_directory)
+    cocoapods_directory: # optional, default is macos
+    # Enable caching for CocoaPods
+    enable_cocoapods_cache: # optional, default is true
+    # Path to .xcworkspace file (relative to working_directory)
+    workspace_path: 
+    # Path to .xcodeproj file (relative to working_directory, used for code signing settings)
+    project_path: 
+    # Xcode scheme to build
+    scheme: 
+    # Enable caching for Xcode DerivedData
+    enable_xcode_cache: # optional, default is true
+    # Build with code signing (requires match secrets)
+    build_signed: # optional, default is true
+    # Export method: 'developer-id' or 'mac-application'
+    export_method: # optional, default is developer-id
+    # Output directory for built app (relative to working_directory)
+    output_directory: # optional, default is dist
+    # Output app name (without .app extension)
+    output_name: 
+    # Create a ZIP archive of the built app
+    create_zip: # optional, default is false
+    # Name of the ZIP file (without .zip extension)
+    zip_name: # optional, default is 
+    # Enable notarization for signed builds
+    enable_notarization: # optional, default is true
+    # Apple Connect email (required for notarization)
+    apple_connect_email: # optional, default is 
+    # Apple Developer email (required for signed builds)
+    apple_developer_email: # optional, default is 
+    # Apple Team ID (required for signed builds)
+    apple_team_id: # optional, default is 
+    # App Store Connect API issuer ID
+    appstore_issuer_id: # optional, default is 
+    # App Store Connect API key ID
+    appstore_key_id: # optional, default is 
+    # App Store Connect API private key content
+    appstore_p8: # optional, default is 
+    # Git repository for storing certificates (format: org/repo)
+    match_repository: # optional, default is 
+    # Password to encrypt/decrypt certificates
+    match_password: # optional, default is 
+    # SSH deploy key for match repository
+    match_deploy_key: # optional, default is 
+    # macOS application bundle identifier
+    mac_bundle_id: 
+    # Use Apple ID session authentication instead of App Store Connect API
+    use_session: # optional, default is false
+    # Apple ID email (required if use_session is true)
+    fastlane_user: # optional, default is 
+    # Apple ID password (required if use_session is true)
+    fastlane_password: # optional, default is 
+    # Fastlane session cookie (required if use_session is true)
+    fastlane_session: # optional, default is 
